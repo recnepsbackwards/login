@@ -1,5 +1,17 @@
-<h1>Hello <%= @userinfo.username %>
+<h1>Hello <%= @userinfo.username %> </h1>
+<ul>
+  <li> <%= @userinfo.fname %> </li>
+  <li> <%= @userinfo.lname %> </li>
+  <li> <%= @userinfo.address %> </li>
+  <li> <%= @userinfo.city %> </li>
+  <li> <%= @userinfo.state %> </li>
+  <li> <%= @userinfo.zipcode %> </li>
+  <li> <%= @userinfo.country %> </li>
   <% @userinfo.phones.each do |phone| %>
-  <%= phone.number %>
-<% end %>
-</h1>
+  <li>  <%= phone.number %> </li>
+  <% end %>
+  <li> <%= @userinfo.email %> </li>
+  <li> <%= @userinfo.username %> </li>
+</ul>
+
+<%= @message %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'registration/index'
+  get 'log_in/check'
+
+  # get 'registration/index'
 
   post 'registration/confirmation'
 
