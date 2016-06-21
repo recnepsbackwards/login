@@ -1,0 +1,5 @@
+<h1>Hello <%= @userinfo.username %>
+  <% @userinfo.phones.each do |phone| %>
+  <%= phone.number %>
+<% end %>
+</h1>
